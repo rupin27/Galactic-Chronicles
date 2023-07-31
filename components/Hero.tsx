@@ -1,7 +1,6 @@
 "use client";
 
 import Image from 'next/image';
-import CustomButton from './CustomButton';
 import CustomButton2 from './CustomButton2';
 
 const Hero = () => {
@@ -36,4 +35,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;

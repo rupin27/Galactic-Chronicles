@@ -9,8 +9,8 @@ export async function fetchPeople(filters: FilterProps) {
     if (filters.person && filters.person.trim() !== "") {
       const nameMatches = person.name.toLowerCase().includes(filters.person.trim().toLowerCase());
       if (!nameMatches) {
-        return false; 
-      }// If the person's name doesn't match, exclude from the results
+        return false;
+      }// if the person's name doesn't match, exclude from the results
     }
 
     // check if homeworld filter is provided
@@ -19,29 +19,29 @@ export async function fetchPeople(filters: FilterProps) {
       const homeworldMatches = typeof person.homeworld === 'string' && person.homeworld.toLowerCase().includes(filters.homeworld.trim().toLowerCase());
       if (!homeworldMatches) {
         return false;
-      } // If the person's homeworld doesn't match, exclude from the results
+      } // if the person's homeworld doesn't match, exclude from the results
     }
 
-    // Check if gender filter is provided
+    // check if gender filter is provided
     if (filters.gender && filters.gender.trim() !== "") {
       const genderMatches = person.gender.toLowerCase() === filters.gender.trim().toLowerCase();
       if (!genderMatches) {
-        return false; 
-      }// If the person's gender doesn't match, exclude from the results
+        return false;
+      }// ff the person's gender doesn't match, exclude from the results
     }
 
-    // Check if species filter is provided
+    // check if species filter is provided
     if (filters.species && filters.species.trim() !== "") {
       const speciesMatches = person.species.toLowerCase().includes(filters.species.trim().toLowerCase());
       if (!speciesMatches) {
-        return false; 
-      }// If the person's species doesn't match, exclude from the results
+        return false;
+      }// if the person's species doesn't match, exclude from the results
     }
-    // If none of the filters are provided or the person matches all the provided filters, include in the results
+    // if none of the filters are provided or the person matches all the provided filters, include in the results
     return true;
   });
-
-  const limit = filters.limit || filteredPeople.length; // If limit is not provided, use all filtered elements
+  // if limit is not provided, use all filtered elements
+  const limit = filters.limit || filteredPeople.length;
   const limitedPeople = filteredPeople.slice(0, limit);
 
   return limitedPeople;
