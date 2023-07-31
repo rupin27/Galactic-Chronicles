@@ -27,7 +27,7 @@ export interface PersonProps {
     born: number;
     bornLocation: string;
     died: number;
-    diedLocation: number;
+    diedLocation: string;
     species: string,
     hairColor: string;
     eyeColor: string;
@@ -35,8 +35,8 @@ export interface PersonProps {
     cybernetics: string;
     affiliations: string[];
     masters: string[];
-    apprentices: string[]
-    formerAffiliations: []
+    apprentices: string[];
+    formerAffiliations: string[];
 }
 
 export interface FilterProps {

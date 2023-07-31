@@ -1,5 +1,4 @@
 import { Hero, SearchBar, CustomFilter, PersonCard, ShowMore } from '@/components'
-import Image from 'next/image'
 import { fetchPeople } from '@/utils';
 import { gender, species } from '@/constants';
 import { FilterProps } from '@/types'; 
