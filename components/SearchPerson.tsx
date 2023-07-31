@@ -43,7 +43,7 @@ const SearchPerson = ({ person, setPerson }: SearchPersonProps) => {
                 <Combobox.Option value={query} className="search-person__option"> Search "{query}"</Combobox.Option>
               ) : (
                 filteredPeople.map((item) => (
-                  <Combobox.Option key={item} className={({ active }) => `relative search-person__option ${active ? 'bg-primary-blue text-white' : 'text-grey-900'}`} value={item}>
+                  <Combobox.Option key={item} className={({ active }) => `relative search-person__option ${active ? 'bg-grey text-white' : 'text-grey-900'}`} value={item}>
                     {({ selected, active }) => (
                       <>
                         <span className={`block truncate ${selected ? 'font-medium' : 'font-normal'}`}>
