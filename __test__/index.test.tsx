@@ -1,6 +1,6 @@
 import { fetchPeople } from '../utils/index';
 
-// Mock the fetch function to return a sample response
+// mock the fetch function
 const mockFetch = (data: any) => jest.fn().mockResolvedValue({ json: () => data });
 
 describe('fetchPeople function', () => {
