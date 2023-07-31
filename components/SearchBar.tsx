@@ -54,7 +54,7 @@ const SearchBar = () => {
     <form className="searchbar" onSubmit={handleSearch}>
       <div className="searchbar__item ">
         <SearchPerson person={person} setPerson={handlePersonChange} />
-        <SearchButton otherClasses="sm:hidden" />
+        <SearchButton otherClasses="sm:hidden ml-2" />
       </div>
       <div className="searchbar__item">
         <Image src="/galaxy.svg" width={40} height={40} className="absolute w-[28px] h-[28px] ml-4" alt="galaxy" />
