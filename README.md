@@ -40,4 +40,9 @@ This project is licensed under the MIT License. You are free to use and modify t
 - Special thanks to akabab for providing the Star Wars API with images, making this project visually appealing.
 - Thanks to the Next.js, TypeScript, React, and Tailwind CSS communities for their excellent tools and documentation.
 
+<<<<<<< HEAD
 Feel free to explore Galactic Chronicles and may the force be with you as you dive into the Star Wars universe! 🚀🌌
+=======
+Feel free to explore Galactic Chronicles and may the force be with you as you dive into the Star Wars universe! 🚀🌌
+
+>>>>>>> 706e5fc55b9151201f30025deb927ea757868d58
