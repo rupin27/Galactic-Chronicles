@@ -27,14 +27,6 @@ To set up the project locally, follow these steps:
 - React: A JavaScript library for building user interfaces.
 - Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
 
-## Contributing
-
-Contributions to Galactic Chronicles are welcome! Feel free to open issues and submit pull requests for enhancements.
-
-## License
-
-This project is licensed under the MIT License. You are free to use and modify the code as per the terms mentioned in the license.
-
 ## Acknowledgments
 
 - Special thanks to akabab for providing the Star Wars API with images, making this project visually appealing.
